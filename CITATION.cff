@@ -25,6 +25,7 @@ authors:
 version: "0.1.0"
 date-released: "2026-10-24"
 license: "MIT"
+repository-code: "https://github.com/zziyang79-crypto/v4-psf-3dspt"
 keywords:
   - "3D single-particle tracking"
   - "point spread function"

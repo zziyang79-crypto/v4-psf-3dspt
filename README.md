@@ -2,6 +2,8 @@
 
 Code accompanying the manuscript on a prism-array V4-PSF for 3D single-particle tracking.
 
+Repository: https://github.com/zziyang79-crypto/v4-psf-3dspt
+
 This is a work-in-progress public package. The repository currently contains:
 
 - the core detection, localization, calibration, QC, trajectory-association, and 3D-output modules;
