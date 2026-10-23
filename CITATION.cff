@@ -22,7 +22,7 @@ authors:
   - family-names: "He"
     given-names: "Yan"
     affiliation: "Department of Chemistry, Tsinghua University, Beijing 100084, China"
-version: "0.1.0"
+version: "1.0.0"
 date-released: "2026-10-24"
 license: "MIT"
 repository-code: "https://github.com/zziyang79-crypto/v4-psf-3dspt"

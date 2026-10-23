@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "v4psf"
-version = "0.1.0"
+version = "1.0.0"
 description = "Analysis code for prism-array V4-PSF 3D single-particle tracking"
 requires-python = ">=3.10"
 dependencies = [

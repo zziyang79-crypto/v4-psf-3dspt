@@ -57,6 +57,6 @@ If you use this code, please cite:
 
 > Zhang, Ziyang; Wang, Junjie; Che, Bingchen; Ren, Qian; Xie, Hao; He, Yan.
 > *Configurable Prism-Array Four-View PSF Microscopy for Three-Dimensional Single-Particle Tracking.*
-> Code version 0.1.0 (2026).
+> Code version 1.0.0 (2026).
 
 Ziyang Zhang and Junjie Wang contributed equally. Hao Xie and Yan He are corresponding authors. `CITATION.cff` contains the machine-readable metadata; a Zenodo DOI will be added after the first archived release.
