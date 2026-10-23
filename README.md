@@ -1,5 +1,7 @@
 # V4-PSF analysis code
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23603209.svg)](https://doi.org/10.5281/zenodo.23603209)
+
 Code accompanying the manuscript on a prism-array V4-PSF for 3D single-particle tracking.
 
 Repository: https://github.com/zziyang79-crypto/v4-psf-3dspt
@@ -59,4 +61,4 @@ If you use this code, please cite:
 > *Configurable Prism-Array Four-View PSF Microscopy for Three-Dimensional Single-Particle Tracking.*
 > Code version 1.0.0 (2026).
 
-Ziyang Zhang and Junjie Wang contributed equally. Hao Xie and Yan He are corresponding authors. `CITATION.cff` contains the machine-readable metadata; a Zenodo DOI will be added after the first archived release.
+Ziyang Zhang and Junjie Wang contributed equally. Hao Xie and Yan He are corresponding authors. `CITATION.cff` contains the machine-readable metadata. Concept DOI (all versions): **10.5281/zenodo.23603209**; this release: **10.5281/zenodo.23603210**.
