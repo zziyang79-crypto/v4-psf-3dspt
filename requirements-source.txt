@@ -1,0 +1,32 @@
+# LF production pipeline - reproducible Windows environment
+# Validated with CPython 3.10.9 (64-bit) on Windows.
+# Python itself is not a pip package; create a Python 3.10 environment first.
+# Install with: python -m pip install -r requirements.txt
+
+# Direct production dependencies
+numpy==1.23.5
+pandas==1.5.3
+scipy==1.10.0
+scikit-image==0.19.3
+scikit-learn==1.2.1
+matplotlib==3.7.0
+tifffile==2021.7.2
+Pillow==9.4.0
+imagecodecs==2021.8.26
+
+# Pinned transitive dependencies from the validated environment
+contourpy==1.0.5
+cycler==0.11.0
+fonttools==4.25.0
+imageio==2.26.0
+joblib==1.1.1
+kiwisolver==1.4.4
+networkx==2.8.4
+packaging==22.0
+pyparsing==3.0.9
+python-dateutil==2.8.2
+pytz==2022.7
+PyWavelets==1.4.1
+six==1.16.0
+threadpoolctl==2.2.0
+

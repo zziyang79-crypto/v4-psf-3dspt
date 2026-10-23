@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "v4psf"
+version = "0.1.0"
+description = "Analysis code for prism-array V4-PSF 3D single-particle tracking"
+requires-python = ">=3.10"
+dependencies = [
+  "numpy>=1.23,<2",
+  "pandas>=1.5,<3",
+  "scipy>=1.10,<2",
+  "scikit-image>=0.19,<0.25",
+  "scikit-learn>=1.2,<2",
+  "matplotlib>=3.7,<4",
+  "tifffile>=2021.7",
+  "Pillow>=9.4",
+  "imagecodecs>=2021.8",
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]

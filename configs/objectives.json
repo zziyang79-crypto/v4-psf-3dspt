@@ -1,0 +1,32 @@
+{
+  "20x": {
+    "name": "20x_0.45NA_air",
+    "magnification": 20.0,
+    "na": 0.45,
+    "immersion_n": 1.0,
+    "wavelength_um": 0.55,
+    "camera_pixel_um": 4.5,
+    "z_range_um": [-10.0, 10.0],
+    "calibration_model": "models/phasor_angle_tracked_models_fluorescence.json"
+  },
+  "40x": {
+    "name": "40x_0.60NA_air",
+    "magnification": 40.0,
+    "na": 0.60,
+    "immersion_n": 1.0,
+    "wavelength_um": 0.55,
+    "camera_pixel_um": 4.5,
+    "z_range_um": [-5.0, 5.0],
+    "calibration_model": "models/phasor_angle_tracked_models_fluorescence.json"
+  },
+  "60x": {
+    "name": "60x_1.0NA_water",
+    "magnification": 60.0,
+    "na": 1.0,
+    "immersion_n": 1.333,
+    "wavelength_um": 0.55,
+    "camera_pixel_um": 4.5,
+    "z_range_um": [-5.0, 5.0],
+    "calibration_model": "models/phasor_angle_tracked_models_fluorescence.json"
+  }
+}

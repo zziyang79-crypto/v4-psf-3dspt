@@ -1,0 +1,610 @@
+{
+  "objective_key": "20x_0.45NA_air",
+  "template_dir": "../../data/psf_templates_20x",
+  "template_file_offset": 10000,
+  "template_frame_start": 15,
+  "template_frame_end": 35,
+  "angle_model_file": "../../models/phasor_angle_tracked_models.json",
+  "length_model_file": "../../models/phasor_length_backup_models.json",
+  "angle_blur_sigma_px": 2.4,
+  "z_min_um": 0.0,
+  "z_max_um": 20.0,
+  "z_start_um": 10.0,
+  "reference_inputs": {
+    "ec10ms_tif": "../LF-zhengfa-ROI/20X-EC-10ms/1-1-1.tif",
+    "ec10ms_spots_csv": "../LF-zhengfa-ROI/20X-EC-10ms/1-1-1_spots.csv",
+    "roi_check_template_dir": "../../data/psf_templates_20x_roicheck",
+    "roi_check_file_prefix": "original-",
+    "notes": "ec10ms_extreme uses the 20X-EC-10ms spot table median SNR around 0.97 and median spot max around 55 counts; ec10ms_tail_extreme uses the same stack's mean tracked spot step around 7.25 px/frame. roi_check_extreme uses original-10015..10035 as the PSF template source."
+  },
+  "full": {
+    "frames_per_stack": 50,
+    "seeds": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19
+    ],
+    "noise_levels": [
+      "clean",
+      "low",
+      "medium",
+      "high",
+      "very_high"
+    ],
+    "aberration_levels": [
+      "none",
+      "very_mild",
+      "mild",
+      "moderate"
+    ]
+  },
+  "smoke": {
+    "frames_per_stack": 10,
+    "seeds": [
+      0
+    ],
+    "noise_levels": [
+      "medium"
+    ],
+    "aberration_levels": [
+      "mild"
+    ]
+  },
+  "qc_stress": {
+    "frames_per_stack": 50,
+    "seeds": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "noise_levels": [
+      "high",
+      "very_high",
+      "extreme"
+    ],
+    "aberration_levels": [
+      "mild",
+      "moderate",
+      "strong"
+    ],
+    "motion_levels": [
+      "medium",
+      "strong",
+      "extreme"
+    ],
+    "artifact_levels": [
+      "spot_ghost_mild",
+      "spot_ghost_strong"
+    ]
+  },
+  "qc_stress_v2": {
+    "frames_per_stack": 50,
+    "seeds": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19
+    ],
+    "noise_levels": [
+      "high",
+      "very_high",
+      "ec10ms_extreme"
+    ],
+    "aberration_levels": [
+      "mild",
+      "moderate",
+      "roi_check_extreme"
+    ],
+    "motion_levels": [
+      "z_exposure_medium",
+      "z_exposure_strong",
+      "ec10ms_tail_moderate",
+      "ec10ms_tail_extreme"
+    ],
+    "artifact_levels": [
+      "none"
+    ]
+  },
+  "production_equivalent_smoke": {
+    "frames_per_stack": 50,
+    "seeds": [
+      0
+    ],
+    "noise_levels": [
+      "ec10ms_extreme"
+    ],
+    "aberration_levels": [
+      "roi_check_extreme"
+    ],
+    "motion_levels": [
+      "ec10ms_tail_moderate"
+    ],
+    "geometry_levels": [
+      "ec10ms_boundary_mild"
+    ],
+    "artifact_levels": [
+      "none"
+    ],
+    "use_production_equivalent_z": true,
+    "trajectory_profile": "ec10ms_boundary_brownian",
+    "z_start_um": 10.0,
+    "z_min_um": 0.0,
+    "z_max_um": 12.0,
+    "step_sigma_um": 1.15,
+    "drift_step_amplitude_um": 0.18,
+    "drift_period_frames": 28.0,
+    "boundary_dwell_segments": 2,
+    "boundary_dwell_min_frames": 7,
+    "boundary_dwell_max_frames": 12,
+    "boundary_dwell_target_max_um": 0.85
+  },
+  "production_equivalent_ec10ms": {
+    "frames_per_stack": 50,
+    "seeds": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32,
+      33,
+      34,
+      35,
+      36,
+      37,
+      38,
+      39,
+      40,
+      41,
+      42,
+      43,
+      44,
+      45,
+      46,
+      47,
+      48,
+      49,
+      50,
+      51,
+      52,
+      53,
+      54,
+      55,
+      56,
+      57,
+      58,
+      59,
+      60,
+      61,
+      62,
+      63,
+      64,
+      65,
+      66,
+      67,
+      68,
+      69,
+      70,
+      71,
+      72,
+      73,
+      74,
+      75,
+      76,
+      77,
+      78,
+      79,
+      80,
+      81,
+      82,
+      83,
+      84,
+      85,
+      86,
+      87,
+      88,
+      89,
+      90,
+      91,
+      92,
+      93,
+      94,
+      95,
+      96,
+      97,
+      98,
+      99
+    ],
+    "noise_levels": [
+      "ec10ms_extreme",
+      "very_high"
+    ],
+    "aberration_levels": [
+      "roi_check_extreme",
+      "moderate"
+    ],
+    "motion_levels": [
+      "ec10ms_tail_moderate"
+    ],
+    "geometry_levels": [
+      "ec10ms_boundary_mild"
+    ],
+    "artifact_levels": [
+      "none"
+    ],
+    "use_production_equivalent_z": true,
+    "trajectory_profile": "ec10ms_boundary_brownian",
+    "z_start_um": 10.0,
+    "z_min_um": 0.0,
+    "z_max_um": 12.0,
+    "step_sigma_um": 1.15,
+    "drift_step_amplitude_um": 0.18,
+    "drift_period_frames": 28.0,
+    "boundary_dwell_segments": 2,
+    "boundary_dwell_min_frames": 7,
+    "boundary_dwell_max_frames": 12,
+    "boundary_dwell_target_max_um": 0.85
+  },
+  "qc_adversarial_controls": {
+    "frames_per_stack": 50,
+    "seeds": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "noise_levels": [
+      "high"
+    ],
+    "aberration_levels": [
+      "mild"
+    ],
+    "motion_levels": [
+      "z_exposure_strong"
+    ],
+    "artifact_levels": [
+      "adversarial_tangential_control",
+      "adversarial_radial_control"
+    ]
+  },
+  "brownian": {
+    "step_sigma_um": 1.0,
+    "drift_step_amplitude_um": 0.22,
+    "drift_period_frames": 24.0
+  },
+  "localization": {
+    "roi_radius_px": 12,
+    "min_peak_distance_px": 20,
+    "background_percentile": 15.0
+  },
+  "noise_presets": {
+    "clean": {
+      "poisson_scale": 0.0,
+      "read_noise_sigma_counts": 0.0,
+      "intensity_jitter_fraction": 0.0,
+      "background_jitter_counts": 0.0
+    },
+    "low": {
+      "poisson_scale": 4.0,
+      "read_noise_sigma_counts": 2.0,
+      "intensity_jitter_fraction": 0.01,
+      "background_jitter_counts": 1.0
+    },
+    "medium": {
+      "poisson_scale": 1.5,
+      "read_noise_sigma_counts": 5.0,
+      "intensity_jitter_fraction": 0.02,
+      "background_jitter_counts": 2.0
+    },
+    "high": {
+      "poisson_scale": 0.7,
+      "read_noise_sigma_counts": 10.0,
+      "intensity_jitter_fraction": 0.04,
+      "background_jitter_counts": 4.0
+    },
+    "very_high": {
+      "poisson_scale": 0.35,
+      "read_noise_sigma_counts": 18.0,
+      "intensity_jitter_fraction": 0.06,
+      "background_jitter_counts": 7.0
+    },
+    "extreme": {
+      "poisson_scale": 0.18,
+      "read_noise_sigma_counts": 28.0,
+      "intensity_jitter_fraction": 0.1,
+      "background_jitter_counts": 12.0
+    },
+    "ec10ms_extreme": {
+      "subtract_background_percentile": 15.0,
+      "intensity_scale_fraction": 0.022,
+      "poisson_scale": 1.0,
+      "read_noise_sigma_counts": 3.6,
+      "intensity_jitter_fraction": 0.1,
+      "background_jitter_counts": 0.6,
+      "background_offset_counts": 0.0
+    }
+  },
+  "aberration_presets": {
+    "none": {
+      "severity": 0.0
+    },
+    "very_mild": {
+      "severity": 0.25
+    },
+    "mild": {
+      "severity": 0.55
+    },
+    "moderate": {
+      "severity": 1.0
+    },
+    "strong": {
+      "severity": 1.6
+    },
+    "roi_check_extreme": {
+      "severity": 0.0,
+      "template_source": "roi_for_check",
+      "template_z_offset_um": 2.126568761208656,
+      "template_z_offset_note": "ROI-for-check and ROI-16BIT frame numbers are not the same physical Z. Offset estimated from production angle model as median(nominal_roi_check_z - aligned_angle_z) over original-10015..10035."
+    }
+  },
+  "motion_presets": {
+    "none": {
+      "exposure_fraction": 0.0,
+      "persistence_alpha": 0.0,
+      "line_blur_px": 0.0,
+      "subframes": 1
+    },
+    "z_exposure_medium": {
+      "exposure_fraction": 0.65,
+      "persistence_alpha": 0.0,
+      "line_blur_px": 0.0,
+      "subframes": 5
+    },
+    "z_exposure_strong": {
+      "exposure_fraction": 0.95,
+      "persistence_alpha": 0.0,
+      "line_blur_px": 0.0,
+      "subframes": 7
+    },
+    "persistence_mild": {
+      "exposure_fraction": 0.65,
+      "persistence_alpha": 0.05,
+      "line_blur_px": 0.0,
+      "subframes": 5
+    },
+    "ec10ms_tail_moderate": {
+      "exposure_fraction": 1.0,
+      "persistence_alpha": 0.0,
+      "line_blur_px": 3.5,
+      "line_blur_angle_mode": "per_frame",
+      "subframes": 9
+    },
+    "ec10ms_tail_extreme": {
+      "exposure_fraction": 1.35,
+      "persistence_alpha": 0.0,
+      "line_blur_px": 7.25,
+      "line_blur_angle_mode": "per_frame",
+      "subframes": 13
+    },
+    "medium": {
+      "exposure_fraction": 0.65,
+      "persistence_alpha": 0.08,
+      "line_blur_px": 1.8,
+      "subframes": 5
+    },
+    "strong": {
+      "exposure_fraction": 0.95,
+      "persistence_alpha": 0.16,
+      "line_blur_px": 3.2,
+      "subframes": 7
+    },
+    "extreme": {
+      "exposure_fraction": 1.25,
+      "persistence_alpha": 0.26,
+      "line_blur_px": 5.0,
+      "subframes": 9
+    }
+  },
+  "artifact_presets": {
+    "none": {
+      "probability": 0.0,
+      "ghost_fraction": 0.0,
+      "dropout_fraction": 0.0,
+      "shift_px": 0.0,
+      "sigma_px": 2.0
+    },
+    "spot_ghost_mild": {
+      "probability": 0.28,
+      "ghost_fraction": 0.45,
+      "dropout_fraction": 0.12,
+      "shift_px": 5.0,
+      "sigma_px": 2.8,
+      "direction_mode": "tangential",
+      "energy_conserving": false,
+      "artifact_persistent": true
+    },
+    "spot_ghost_strong": {
+      "probability": 0.48,
+      "ghost_fraction": 0.85,
+      "dropout_fraction": 0.26,
+      "shift_px": 8.0,
+      "sigma_px": 3.5,
+      "direction_mode": "tangential",
+      "energy_conserving": false,
+      "artifact_persistent": true
+    },
+    "balanced_artifact_mild": {
+      "probability": 0.12,
+      "ghost_fraction": 0.15,
+      "dropout_fraction": 0.02,
+      "shift_px": 4.0,
+      "sigma_px": 2.4,
+      "direction_mode": "balanced",
+      "energy_conserving": true,
+      "artifact_persistent": false
+    },
+    "balanced_artifact_medium": {
+      "probability": 0.28,
+      "ghost_fraction": 0.35,
+      "dropout_fraction": 0.06,
+      "shift_px": 5.5,
+      "sigma_px": 2.8,
+      "direction_mode": "balanced",
+      "energy_conserving": true,
+      "artifact_persistent": false
+    },
+    "balanced_artifact_strong": {
+      "probability": 0.45,
+      "ghost_fraction": 0.55,
+      "dropout_fraction": 0.1,
+      "shift_px": 7.0,
+      "sigma_px": 3.2,
+      "direction_mode": "balanced",
+      "energy_conserving": true,
+      "artifact_persistent": false
+    },
+    "adversarial_tangential_control": {
+      "probability": 0.45,
+      "ghost_fraction": 0.55,
+      "dropout_fraction": 0.1,
+      "shift_px": 7.0,
+      "sigma_px": 3.2,
+      "direction_mode": "tangential",
+      "energy_conserving": true,
+      "artifact_persistent": false
+    },
+    "adversarial_radial_control": {
+      "probability": 0.45,
+      "ghost_fraction": 0.55,
+      "dropout_fraction": 0.1,
+      "shift_px": 7.0,
+      "sigma_px": 3.2,
+      "direction_mode": "radial",
+      "energy_conserving": true,
+      "artifact_persistent": false
+    }
+  },
+  "geometry_disturbance_presets": {
+    "none": {
+      "mode": "none"
+    },
+    "ec10ms_boundary_mild": {
+      "mode": "local_shift_and_domain_pressure",
+      "local_probability": 0.12,
+      "local_shift_px": 2.5,
+      "local_sigma_px": 4.0,
+      "direction_mode": "balanced",
+      "min_peak_distance_px": 20,
+      "theta_bias_near_low_z_deg": 0.0,
+      "theta_bias_low_z_window_um": 2.8,
+      "theta_bias_probability": 0.0,
+      "theta_bias_jitter_deg": 0.35
+    },
+    "ec10ms_boundary_medium": {
+      "mode": "local_shift_and_domain_pressure",
+      "local_probability": 0.14,
+      "local_shift_px": 3.2,
+      "local_sigma_px": 4.5,
+      "direction_mode": "balanced",
+      "min_peak_distance_px": 20,
+      "theta_bias_near_low_z_deg": 0.0,
+      "theta_bias_low_z_window_um": 3.0,
+      "theta_bias_probability": 0.0,
+      "theta_bias_jitter_deg": 0.7
+    },
+    "ec10ms_boundary_strong": {
+      "mode": "local_shift_and_domain_pressure",
+      "local_probability": 0.2,
+      "local_shift_px": 4.2,
+      "local_sigma_px": 5.0,
+      "direction_mode": "balanced",
+      "min_peak_distance_px": 20,
+      "theta_bias_near_low_z_deg": 0.0,
+      "theta_bias_low_z_window_um": 3.2,
+      "theta_bias_probability": 0.0,
+      "theta_bias_jitter_deg": 0.75
+    }
+  },
+  "qc": {
+    "enabled": true,
+    "trim_low_percent": 5.0,
+    "trim_high_percent": 95.0,
+    "angle_d2_normalized_min": 1.0,
+    "angle_length_relative_threshold_percent": 90.0,
+    "trend_interp_max_search_frames": 3,
+    "jump_nms_radius": 2
+  }
+}

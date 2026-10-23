@@ -1,0 +1,14 @@
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.env
+outputs/
+generated_stacks/
+smoke/
+figures/
+*.npz
+*.npy
+*.log
+data/raw/
+data/generated/

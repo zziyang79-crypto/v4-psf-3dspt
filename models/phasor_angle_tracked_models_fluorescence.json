@@ -1,0 +1,286 @@
+{
+  "generated_at": "2026-10-22T17:26:14",
+  "model_name": "phasor_joint_tracked_average_real_spline_fluorescence",
+  "localization_method": "phasor",
+  "z_metric": "joint_tracked_simple_average_angle_primary",
+  "description": "Fluorescence-channel V4-PSF axial calibration using 1 um fluorescent polystyrene microspheres. theta_joint=(tracked_diag0+tracked_diag1)/2 after Gaussian blur sigma=2.4 px; independent ROI for step recovery. Not interchangeable with the scattering-channel model.",
+  "objective_aliases": {
+    "20x": "20x_0.45NA_air",
+    "20x_0.45NA_air": "20x_0.45NA_air",
+    "20x_NA0.45_n1.0": "20x_0.45NA_air",
+    "40x": "40x_0.6NA_air",
+    "40x_0.6NA_air": "40x_0.6NA_air",
+    "40x_NA0.6_n1.0": "40x_0.6NA_air",
+    "60x": "60x_1.0NA_water",
+    "60x_1.0NA_water": "60x_1.0NA_water",
+    "60x_water": "60x_1.0NA_water",
+    "60x_NA1.0_n1.333": "60x_1.0NA_water"
+  },
+  "models": {
+    "20x_0.45NA_air": {
+      "display": "20x_0.45NA_air",
+      "objective_config": "20x_NA0.45_n1.0",
+      "localization_method": "phasor",
+      "z_localization_method": "phasor_blur",
+      "blur_sigma_px": 2.4,
+      "angle_signal": "tracked_simple_average",
+      "channel": "fluorescence",
+      "sample": "1 um fluorescent polystyrene microsphere",
+      "angle_spline": {
+        "primary_model": "joint_tracked_simple_average_monotonic_spline_fluorescence",
+        "spline_kind": "pchip",
+        "theta_input_column": "theta_tracked_simple_average_unwrapped_deg",
+        "knots_x_theta_deg": [
+          51.07705378269828,
+          52.20952497029618,
+          53.378769459276825,
+          54.64610681529692,
+          55.91751503798454,
+          57.13429990262788,
+          58.45176998739749,
+          59.88295532745197,
+          61.34150673569199,
+          62.8363065748507,
+          64.3985990787203,
+          65.98496045614301,
+          67.75866794687478,
+          69.47910808191108,
+          71.26936741564411,
+          73.08238647637684,
+          74.86616984624325,
+          76.69605973430257,
+          78.52910998740455,
+          80.42778381185923,
+          82.2821732878891,
+          84.06208513568734,
+          85.84619563125824,
+          87.66111102617378
+        ],
+        "knots_y_z_corrected_relative_um": [
+          23.0,
+          22.0,
+          21.0,
+          20.0,
+          19.0,
+          18.0,
+          17.0,
+          16.0,
+          15.0,
+          14.0,
+          13.0,
+          12.0,
+          11.0,
+          10.0,
+          9.0,
+          8.0,
+          7.0,
+          6.0,
+          5.0,
+          4.0,
+          3.0,
+          2.0,
+          1.0,
+          0.0
+        ],
+        "domain_theta_deg": [
+          51.07705378269828,
+          87.66111102617378
+        ],
+        "relative_zero_frame": 9,
+        "allow_extrapolation_default": true
+      },
+      "calibration_work_range_frames": {
+        "start_frame": 9,
+        "end_frame": 32
+      },
+      "independent_check_work_range_frames": {
+        "start_frame": 9,
+        "end_frame": 32
+      },
+      "validation_metrics": {
+        "blur_sigma_px": 2.4,
+        "candidate": "tracked_simple_average",
+        "calibration_start_frame": 9,
+        "calibration_end_frame": 32,
+        "independent_start_frame": 9,
+        "independent_end_frame": 32,
+        "real_model_status": "ok",
+        "real_n_fit_points": 24,
+        "theta_monotonic_fraction": 1.0,
+        "theta_smoothness_rms_deg": 0.06853702880349476,
+        "calibration_loocv_rmse_nm": 18.308743427232038,
+        "calibration_loocv_mae_nm": 14.93556515990162,
+        "independent_branch_shift_deg": 0.0,
+        "independent_theta_domain_fraction": 0.9166666666666666,
+        "independent_step_rmse_nm": 95.88913669469659,
+        "independent_step_mae_nm": 74.97103902012614,
+        "independent_n_steps": 16,
+        "independent_step_rmse_all_nm": 423.3701313407292,
+        "independent_n_steps_all": 21,
+        "platform_frames_excluded": [
+          9,
+          10,
+          16,
+          17
+        ],
+        "independent_direction_consistency": 0.9523809523809523
+      }
+    },
+    "40x_0.6NA_air": {
+      "display": "40x_0.6NA_air",
+      "objective_config": "40x_NA0.6_n1.0",
+      "localization_method": "phasor",
+      "z_localization_method": "phasor_blur",
+      "blur_sigma_px": 2.4,
+      "angle_signal": "tracked_simple_average",
+      "channel": "fluorescence",
+      "sample": "1 um fluorescent polystyrene microsphere",
+      "angle_spline": {
+        "primary_model": "joint_tracked_simple_average_monotonic_spline_fluorescence",
+        "spline_kind": "pchip",
+        "theta_input_column": "theta_tracked_simple_average_unwrapped_deg",
+        "knots_x_theta_deg": [
+          44.44273509879682,
+          46.597044066944406,
+          49.403703460076,
+          52.6348303113259,
+          56.44483936435404,
+          60.655011820779,
+          65.41724719065469,
+          70.36208561626626,
+          75.7818080059825,
+          81.31824853803123,
+          86.94483470924985,
+          92.63773243776514
+        ],
+        "knots_y_z_corrected_relative_um": [
+          11.0,
+          10.0,
+          9.0,
+          8.0,
+          7.0,
+          6.0,
+          5.0,
+          4.0,
+          3.0,
+          2.0,
+          1.0,
+          0.0
+        ],
+        "domain_theta_deg": [
+          44.44273509879682,
+          92.63773243776514
+        ],
+        "relative_zero_frame": 12,
+        "allow_extrapolation_default": true
+      },
+      "calibration_work_range_frames": {
+        "start_frame": 12,
+        "end_frame": 23
+      },
+      "independent_check_work_range_frames": {
+        "start_frame": 13,
+        "end_frame": 24
+      },
+      "validation_metrics": {
+        "blur_sigma_px": 2.4,
+        "candidate": "tracked_simple_average",
+        "calibration_start_frame": 12,
+        "calibration_end_frame": 23,
+        "independent_start_frame": 13,
+        "independent_end_frame": 24,
+        "real_model_status": "ok",
+        "real_n_fit_points": 12,
+        "theta_monotonic_fraction": 1.0,
+        "theta_smoothness_rms_deg": 0.41118703193431866,
+        "calibration_loocv_rmse_nm": 50.91502275783061,
+        "calibration_loocv_mae_nm": 28.48743739410615,
+        "independent_branch_shift_deg": -90.0,
+        "independent_theta_domain_fraction": 0.9166666666666666,
+        "independent_step_rmse_nm": 66.80018338869696,
+        "independent_step_mae_nm": 52.09923279877147,
+        "independent_n_steps": 10,
+        "independent_step_rmse_all_nm": 66.80018338869696,
+        "independent_n_steps_all": 10,
+        "platform_frames_excluded": [],
+        "independent_direction_consistency": 1.0
+      }
+    },
+    "60x_1.0NA_water": {
+      "display": "60x_1.0NA_water",
+      "objective_config": "60x_NA1.0_n1.333",
+      "localization_method": "phasor",
+      "z_localization_method": "phasor_blur",
+      "blur_sigma_px": 2.4,
+      "angle_signal": "tracked_simple_average",
+      "channel": "fluorescence",
+      "sample": "1 um fluorescent polystyrene microsphere",
+      "angle_spline": {
+        "primary_model": "joint_tracked_simple_average_monotonic_spline_fluorescence",
+        "spline_kind": "pchip",
+        "theta_input_column": "theta_tracked_simple_average_unwrapped_deg",
+        "knots_x_theta_deg": [
+          -45.07120843797041,
+          -42.16820009448412,
+          -39.23554871743107,
+          -35.85724515647652,
+          -31.52119597390949,
+          -26.357906509370974,
+          -20.676499820171227,
+          -14.331624665260607,
+          -7.304684651942917,
+          0.2729192756498726
+        ],
+        "knots_y_z_corrected_relative_um": [
+          9.0,
+          8.0,
+          7.0,
+          6.0,
+          5.0,
+          4.0,
+          3.0,
+          2.0,
+          1.0,
+          0.0
+        ],
+        "domain_theta_deg": [
+          -45.07120843797041,
+          0.2729192756498726
+        ],
+        "relative_zero_frame": 7,
+        "allow_extrapolation_default": true
+      },
+      "calibration_work_range_frames": {
+        "start_frame": 7,
+        "end_frame": 16
+      },
+      "independent_check_work_range_frames": {
+        "start_frame": 7,
+        "end_frame": 16
+      },
+      "validation_metrics": {
+        "blur_sigma_px": 2.4,
+        "candidate": "tracked_simple_average",
+        "calibration_start_frame": 7,
+        "calibration_end_frame": 16,
+        "independent_start_frame": 7,
+        "independent_end_frame": 16,
+        "real_model_status": "ok",
+        "real_n_fit_points": 10,
+        "theta_monotonic_fraction": 1.0,
+        "theta_smoothness_rms_deg": 0.6401334645340948,
+        "calibration_loocv_rmse_nm": 41.288086776375174,
+        "calibration_loocv_mae_nm": 30.644457028644318,
+        "independent_branch_shift_deg": -90.0,
+        "independent_theta_domain_fraction": 0.9,
+        "independent_step_rmse_nm": 101.02782341798142,
+        "independent_step_mae_nm": 84.03982049592756,
+        "independent_n_steps": 8,
+        "independent_step_rmse_all_nm": 101.02782341798142,
+        "independent_n_steps_all": 8,
+        "platform_frames_excluded": [],
+        "independent_direction_consistency": 1.0
+      }
+    }
+  }
+}

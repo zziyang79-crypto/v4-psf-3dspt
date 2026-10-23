@@ -1,0 +1,41 @@
+{
+  "title": "Configurable Prism-Array Four-View PSF Microscopy for Three-Dimensional Single-Particle Tracking",
+  "upload_type": "software",
+  "publication_date": "2026-10-24",
+  "access_right": "open",
+  "license": "MIT",
+  "creators": [
+    {
+      "name": "Zhang, Ziyang",
+      "affiliation": "Department of Chemistry, Tsinghua University, Beijing 100084, China"
+    },
+    {
+      "name": "Wang, Junjie",
+      "affiliation": "Department of Chemistry, Tsinghua University, Beijing 100084, China"
+    },
+    {
+      "name": "Che, Bingchen",
+      "affiliation": "Beijing National Laboratory for Condensed Matter Physics, Institute of Physics, Chinese Academy of Sciences, Beijing 100190, China"
+    },
+    {
+      "name": "Ren, Qian",
+      "affiliation": "Department of Chemistry, Tsinghua University, Beijing 100084, China"
+    },
+    {
+      "name": "Xie, Hao",
+      "affiliation": "Beijing National Laboratory for Condensed Matter Physics, Institute of Physics, Chinese Academy of Sciences, Beijing 100190, China"
+    },
+    {
+      "name": "He, Yan",
+      "affiliation": "Department of Chemistry, Tsinghua University, Beijing 100084, China"
+    }
+  ],
+  "description": "Analysis code for prism-array V4-PSF 3D single-particle tracking, including four-subimage localization, angle-primary axial calibration, QC, trajectory-level association, PSF/CRLB simulation, and seed-based QC/linking benchmarks.",
+  "keywords": [
+    "3D single-particle tracking",
+    "point spread function",
+    "prism array",
+    "axial calibration",
+    "fluorescence microscopy"
+  ]
+}
